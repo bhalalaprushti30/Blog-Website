@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Insights | Home</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css"> 
+    <link rel="stylesheet" href="css/blog.css"> 
+
+    <!-- Home Page Specific CSS -->
+
+    <!-- JavaScript -->
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navigation">
+            <!-- Left: Logo -->
+            <div class="navLeft">
+                <a href="index.html" class="logo">Tech Insights</a>
+            </div>
+
+            <!-- Center: Navigation Links -->
+            <ul class="nav-items">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="ai.html" class="active">AI</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Right: Search & Dark Mode -->
+            <div class="navRight">
+                <input type="search" class="search-input" placeholder="Search Here">
+                <button class="btn">Search</button>
+                <button id="darkModeToggle">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Featured Blog Post -->
+        <section class="blog-container">
+            <img src="img/ai.webp" alt="Artificial Intelligence">
+            <h1>The Future of AI: Opportunities & Challenges</h1>
+            <p>
+                Artificial Intelligence (AI) is transforming industries, from healthcare to finance. AI-powered automation, 
+                machine learning models, and neural networks are redefining efficiency and decision-making.
+            </p>
+            <p>
+                However, ethical concerns regarding bias, job displacement, and security risks remain. It is crucial to 
+                establish guidelines and regulations for responsible AI development.
+            </p>
+        </section>
+    
+        <!-- Latest Tech Articles -->
+        <section class="articles">
+            <h2>Latest in Tech</h2>
+            <div class="article-list">
+                <!-- Article 1 -->
+                <div class="article">
+                    <img src="img/blockchain.jpg" alt="Blockchain">
+                    <h3>Blockchain Beyond Cryptocurrency</h3>
+                    <p>Blockchain is revolutionizing industries far beyond cryptocurrency, from supply chain management to digital identity verification.</p>
+                    <a href="blockchain.html" class="btn-read">Read More</a>
+                </div>
+    
+                <!-- Article 2 -->
+                <div class="article">
+                    <img src="img/quantum.jpg" alt="Quantum Computing">
+                    <h3>Quantum Computing: The Next Big Thing</h3>
+                    <p>With exponential processing power, quantum computing promises to reshape fields like cryptography, materials science, and AI.</p>
+                    <a href="quantum.html" class="btn-read">Read More</a>
+                </div>
+    
+                <!-- Article 3 -->
+                <div class="article">
+                    <img src="img/Metaverse.jpeg" alt="Metaverse">
+                    <h3>Metaverse: The Digital Universe</h3>
+                    <p>Virtual worlds, digital assets, and immersive experiences are defining the next evolution of the internet.</p>
+                    <a href="metaverse.html" class="btn-read">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tech Insights | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

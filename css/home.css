@@ -1,0 +1,270 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Pink Theme Colors */
+:root {
+    --primary-color: #ff4f81;
+    --secondary-color: #ff7eb3;
+    --background-color: #fce4ec;
+    --text-color: #333;
+    --white: #fff;
+    --dark-bg: #121212;
+    --dark-text: #e0e0e0;
+}
+
+/* Make sure the page takes full height */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Content: Pushes Footer to Bottom */
+main {
+    flex: 1;
+}
+
+/* Sticky Navbar */
+.header {
+    background: var(--primary-color);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navbar Container */
+.navigation {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.navLeft .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navLeft .logo:hover {
+    color: var(--secondary-color);
+}
+
+/* Navbar Items */
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items li {
+    margin: 0 15px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--white);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-items a:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Search and Dark Mode */
+.navRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Search Bar */
+.search-input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    background: var(--white);
+}
+
+.search-input:focus {
+    border-color: var(--secondary-color);
+}
+
+/* Search Button */
+.btn {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+/* Dark Mode Toggle */
+#darkModeToggle {
+    background: var(--white);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#darkModeToggle:hover {
+    background: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.dark-mode .header {
+    background: #333;
+}
+
+.dark-mode .nav-items a {
+    color: var(--dark-text);
+}
+
+.dark-mode .nav-items a:hover {
+    background: #555;
+}
+
+.dark-mode .search-input {
+    background: #222;
+    color: var(--dark-text);
+    border-color: #777;
+}
+
+.dark-mode .btn {
+    background: #777;
+}
+
+.dark-mode #darkModeToggle {
+    background: #777;
+    color: var(--white);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--background-color);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+/* Featured Articles */
+.articles {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.articles h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.article-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Article Card */
+.article {
+    background: var(--white);
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+}
+
+.article img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.article h3 {
+    margin: 15px 0;
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+
+.article p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.article .btn-read {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.article .btn-read:hover {
+    background: var(--secondary-color);
+}
+
+/* Sticky Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--primary-color);
+    color: var(--white);
+    margin-top: auto; /* Makes sure the footer stays at the bottom */
+    width: 100%;
+}

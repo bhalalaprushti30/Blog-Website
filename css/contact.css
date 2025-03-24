@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Pink Theme Colors */
+:root {
+    --primary-color: #ff4f81;
+    --secondary-color: #ff7eb3;
+    --background-color: #fce4ec;
+    --text-color: #333;
+    --white: #fff;
+}
+
+/* Navbar Styles */
+.header {
+    background: var(--primary-color);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-items a.active {
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* Contact Page Styling */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: var(--background-color);
+    padding: 50px 20px;
+}
+
+.contact-form {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.contact-form h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--secondary-color);
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: var(--secondary-color);
+}
+
+/* Sticky Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--primary-color);
+    color: var(--white);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+/* Dark Mode Styles */
+.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+/* Apply dark mode to contact container */
+.dark-mode .contact-container {
+    background: #222;
+}
+
+/* Dark mode for form */
+.dark-mode .contact-form {
+    background: #333;
+    color: #e0e0e0;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Dark mode for input fields */
+.dark-mode input,
+.dark-mode textarea {
+    background: #444;
+    color: #e0e0e0;
+    border-color: #777;
+}
+
+/* Dark mode submit button */
+.dark-mode .btn-submit {
+    background: #777;
+    color: #fff;
+}
+
+.dark-mode .btn-submit:hover {
+    background: var(--secondary-color);
+}
+
+/* Dark mode for footer */
+.dark-mode footer {
+    background: #333;
+    color: #e0e0e0;
+}
+

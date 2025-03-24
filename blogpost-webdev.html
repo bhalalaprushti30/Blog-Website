@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Insights | Web Development</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css"> 
+    <link rel="stylesheet" href="css/blog.css"> 
+
+    <!-- JavaScript -->
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navigation">
+            <!-- Left: Logo -->
+            <div class="navLeft">
+                <a href="index.html" class="logo">Tech Insights</a>
+            </div>
+
+            <!-- Center: Navigation Links -->
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="webdev.html" class="active">WebDevelopment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Right: Search & Dark Mode -->
+            <div class="navRight">
+                <input type="search" class="search-input" placeholder="Search Here">
+                <button class="btn">Search</button>
+                <button id="darkModeToggle">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Featured Blog Post -->
+        <section class="blog-container">
+            <img src="img/webdev.png" alt="Modern Web Development">
+            <h1>The Future of Web Development: Trends & Technologies</h1>
+            <p>
+                Web development is evolving rapidly, with new frameworks, technologies, and design trends shaping the internet. From Jamstack architecture 
+                to AI-powered website builders, the industry is undergoing a massive transformation.
+            </p>
+            <p>
+                Progressive Web Apps (PWAs), serverless computing, and Web3 technologies like decentralized applications (DApps) are redefining the way users interact 
+                with the web.
+            </p>
+        </section>
+    
+        <!-- Latest Web Development Articles -->
+        <section class="articles">
+            <h2>Latest in Web Development</h2>
+            <div class="article-list">
+                <!-- Article 1 -->
+                <div class="article">
+                    <img src="img/react.jpg" alt="React.js">
+                    <h3>React 2025: What's New?</h3>
+                    <p>The future of React is here! With React Server Components, Suspense, and new rendering optimizations, developers are in for a treat.</p>
+                    <a href="react.html" class="btn-read">Read More</a>
+                </div>
+    
+                <!-- Article 2 -->
+                <div class="article">
+                    <img src="img/tailwind.jpg" alt="Tailwind CSS">
+                    <h3>Tailwind CSS vs Bootstrap</h3>
+                    <p>Is utility-first styling better than traditional frameworks? A deep dive into Tailwind CSS vs. Bootstrap for modern web design.</p>
+                    <a href="tailwind.html" class="btn-read">Read More</a>
+                </div>
+    
+                <!-- Article 3 -->
+                <div class="article">
+                    <img src="img/web3.png" alt="Web3">
+                    <h3>Web3 & Decentralized Web</h3>
+                    <p>Blockchain and smart contracts are paving the way for Web3. Learn how decentralized applications (DApps) are shaping the future.</p>
+                    <a href="web3.html" class="btn-read">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tech Insights | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
